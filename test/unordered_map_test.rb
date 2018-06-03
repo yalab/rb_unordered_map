@@ -10,4 +10,8 @@ class UnorderedMapTest < Minitest::Test
   def test_init
     assert_equal 'UnorderedMap', @unordered_map.class.name
   end
+
+  def test_store
+    @unordered_map["1"] = "a"
+  end
 end
